@@ -1,0 +1,64 @@
+<!--
+ * @Author: pft 904755879@qq.com
+ * @Date: 2023-01-06 16:24:30
+ * @LastEditors: pft 904755879@qq.com
+ * @LastEditTime: 2023-01-06 20:34:22
+ * @FilePath: /css-demo/count-to/count.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css 实现数字翻牌</title>
+  <link rel="stylesheet" href="./count.css">
+</head>
+<body>
+  <h2>点击下面的数字随机变化</h2>
+  <count id="count" title="点我一下你试试"></count>
+
+  <hr>
+
+  <h3>下面是 css 计数器的使用场景</h3>
+  <fieldset>
+    <legend>Choose your monster's features:</legend>
+    <div>
+      <input type="checkbox" id="scales" name="scales" checked>
+      <label for="scales">Scales</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="horns" name="horns" checked>
+      <label for="horns">Horns</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="horns1" name="horns1">
+      <label for="horns1">Horns1</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="horns2" name="horns2">
+      <label for="horns2">Horns2</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="horns3" name="horns3">
+      <label for="horns3">Horns3</label>
+    </div>
+
+    <p id="howMany">选中的个数是</p>
+  </fieldset>
+
+  <hr>
+</body>
+
+<script>
+  document.getElementById('count').addEventListener('click',e => {
+    e.target.style.setProperty('--persent',Math.random())
+    console.log(e.target.style.getPropertyValue('--persent')); 
+  })
+</script>
+</html>
