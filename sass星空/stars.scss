@@ -1,0 +1,90 @@
+
+$width: 10px;
+$height: 10px;
+$color: yellow;
+$size: 1px;
+
+/*
+  @parmars
+  n: number of stars
+  c: size of stars
+*/
+@function stars ($n, $c: #fff) {
+  $boxShadow: '#{random(100)}vw #{random(100)}vh  #{$c}';
+
+  @for $i from 2 through $n {
+    $boxShadow: '#{$boxShadow}, #{random(100)}vw #{random(100)}vh #{$c}';
+  }
+
+  @return unquote($boxShadow)
+}
+
+body {
+  background: #000;
+}
+
+/*
+  @parmars
+  count: number of stars
+  size: size of stars
+  color: color of stars
+  time: time of animation
+*/
+@mixin layer($count, $width, $height, $color, $time) {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: $width;
+  height: $height;
+  background: $color;
+  border-radius: 50%;
+  box-shadow: stars($count, $color);
+  animation: moveUp $time infinite linear;
+
+  &::after {
+    width: inherit;
+    height: inherit;
+    content: "";
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    box-shadow: inherit;
+  }
+}
+
+.layer1 {
+  @include layer(300, 2px, 2px, $color, 10s);
+}
+.layer2 {
+  @include layer(300, 4px, 4px, #fff, 7s);
+  z-index: 2;
+}
+.layer3 {
+  @include layer(300, 6px, 6px, rgb(236, 240, 18), 5s);
+  z-index: 3;
+}
+
+
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes moveUp {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(0, -100vh)
+  }
+}

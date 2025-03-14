@@ -1,0 +1,53 @@
+<!--
+ * @Author: pft tao.pan@backgardon.com
+ * @Date: 2024-04-08 17:57:05
+ * @LastEditors: pft tao.pan@backgardon.com
+ * @LastEditTime: 2024-04-08 18:19:36
+ * @FilePath: \project-pftd:\study\扫光.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: blue;
+    }
+    .sweep-button {  
+  position: relative;  
+  display: inline-block;  
+  padding: 10px 20px;  
+  color: white;  
+  background: #000; /* 初始背景色 */  
+  border: none;  
+  border-radius: 4px;  
+  cursor: pointer;  
+  overflow: hidden; /* 防止内容溢出 */  
+  transition: background-position 0.5s ease; /* 动画效果 */  
+}  
+  
+.sweep-button::before {  
+  content: "";  
+  position: absolute;  
+  top: -33px;  
+  width: 30px;  
+  height: 100px;  
+  background: linear-gradient(to left, transparent, rgba(256,256,256,.5) 40%,  rgba(256,256,256,.5) 60%, transparent); /* 渐变效果 */  
+  animation: identifier  infinite 3s linear 1s;
+  transform: rotate(135deg);
+}  
+  
+@keyframes identifier {
+  from{transform: translateX(-300%) rotate(135deg); /* 动画效果 */}
+  to{transform: translateX(100%) rotate(135deg); /* 动画效果 */}
+}
+  
+  </style>
+</head>
+<body>
+  <button class="sweep-button">点击我</button>
+</body>
+</html>

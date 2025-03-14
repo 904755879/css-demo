@@ -1,0 +1,100 @@
+/*
+  @parmars
+  n: number of stars
+  c: size of stars
+*/
+body {
+  background: #000;
+}
+
+/*
+  @parmars
+  count: number of stars
+  size: size of stars
+  color: color of stars
+  time: time of animation
+*/
+.layer1 {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 2px;
+  height: 2px;
+  background: yellow;
+  border-radius: 50%;
+  box-shadow: 41vw 31vh  yellow, 93vw 80vh yellow, 24vw 66vh yellow, 61vw 12vh yellow, 44vw 52vh yellow, 2vw 17vh yellow, 51vw 66vh yellow, 56vw 90vh yellow, 29vw 64vh yellow, 59vw 75vh yellow, 23vw 50vh yellow, 34vw 9vh yellow, 73vw 53vh yellow, 86vw 63vh yellow, 53vw 9vh yellow, 45vw 35vh yellow, 93vw 1vh yellow, 83vw 12vh yellow, 52vw 18vh yellow, 50vw 57vh yellow, 67vw 7vh yellow, 20vw 64vh yellow, 71vw 32vh yellow, 83vw 21vh yellow, 30vw 74vh yellow, 30vw 96vh yellow, 39vw 90vh yellow, 50vw 21vh yellow, 16vw 31vh yellow, 62vw 87vh yellow, 95vw 100vh yellow, 68vw 23vh yellow, 38vw 23vh yellow, 75vw 70vh yellow, 70vw 21vh yellow, 10vw 93vh yellow, 100vw 26vh yellow, 47vw 45vh yellow, 79vw 20vh yellow, 93vw 15vh yellow, 85vw 20vh yellow, 3vw 21vh yellow, 96vw 88vh yellow, 66vw 65vh yellow, 3vw 49vh yellow, 1vw 8vh yellow, 37vw 88vh yellow, 76vw 95vh yellow, 75vw 67vh yellow, 69vw 54vh yellow, 85vw 62vh yellow, 25vw 26vh yellow, 100vw 31vh yellow, 22vw 8vh yellow, 30vw 55vh yellow, 24vw 98vh yellow, 91vw 100vh yellow, 48vw 5vh yellow, 6vw 40vh yellow, 68vw 13vh yellow, 89vw 21vh yellow, 29vw 29vh yellow, 17vw 87vh yellow, 94vw 37vh yellow, 62vw 76vh yellow, 2vw 55vh yellow, 75vw 59vh yellow, 60vw 96vh yellow, 74vw 25vh yellow, 90vw 47vh yellow, 71vw 4vh yellow, 36vw 100vh yellow, 58vw 59vh yellow, 13vw 77vh yellow, 84vw 31vh yellow, 64vw 17vh yellow, 31vw 73vh yellow, 18vw 71vh yellow, 34vw 64vh yellow, 57vw 16vh yellow, 10vw 45vh yellow, 66vw 47vh yellow, 77vw 63vh yellow, 48vw 52vh yellow, 54vw 62vh yellow, 85vw 77vh yellow, 53vw 49vh yellow, 87vw 51vh yellow, 53vw 62vh yellow, 98vw 29vh yellow, 96vw 32vh yellow, 26vw 39vh yellow, 45vw 39vh yellow, 85vw 19vh yellow, 17vw 5vh yellow, 31vw 22vh yellow, 72vw 13vh yellow, 78vw 74vh yellow, 58vw 45vh yellow, 40vw 80vh yellow, 81vw 23vh yellow, 43vw 39vh yellow, 94vw 32vh yellow, 70vw 23vh yellow, 80vw 38vh yellow, 64vw 10vh yellow, 99vw 16vh yellow, 30vw 27vh yellow, 46vw 98vh yellow, 53vw 75vh yellow, 14vw 79vh yellow, 58vw 14vh yellow, 57vw 87vh yellow, 27vw 2vh yellow, 32vw 96vh yellow, 58vw 67vh yellow, 100vw 48vh yellow, 84vw 17vh yellow, 81vw 38vh yellow, 2vw 6vh yellow, 10vw 91vh yellow, 33vw 97vh yellow, 84vw 22vh yellow, 28vw 51vh yellow, 61vw 71vh yellow, 89vw 47vh yellow, 81vw 36vh yellow, 50vw 64vh yellow, 74vw 18vh yellow, 28vw 70vh yellow, 65vw 93vh yellow, 27vw 23vh yellow, 84vw 10vh yellow, 86vw 83vh yellow, 22vw 53vh yellow, 31vw 20vh yellow, 62vw 58vh yellow, 95vw 5vh yellow, 98vw 59vh yellow, 62vw 98vh yellow, 75vw 1vh yellow, 15vw 32vh yellow, 40vw 33vh yellow, 12vw 81vh yellow, 87vw 30vh yellow, 9vw 94vh yellow, 18vw 35vh yellow, 38vw 97vh yellow, 33vw 62vh yellow, 19vw 26vh yellow, 7vw 53vh yellow, 74vw 78vh yellow, 88vw 55vh yellow, 61vw 65vh yellow, 83vw 79vh yellow, 58vw 41vh yellow, 83vw 3vh yellow, 95vw 84vh yellow, 17vw 68vh yellow, 1vw 5vh yellow, 8vw 57vh yellow, 4vw 73vh yellow, 23vw 63vh yellow, 52vw 45vh yellow, 17vw 66vh yellow, 24vw 68vh yellow, 87vw 19vh yellow, 69vw 10vh yellow, 95vw 95vh yellow, 40vw 57vh yellow, 81vw 84vh yellow, 84vw 69vh yellow, 71vw 58vh yellow, 28vw 98vh yellow, 100vw 67vh yellow, 38vw 99vh yellow, 37vw 91vh yellow, 42vw 21vh yellow, 11vw 82vh yellow, 68vw 84vh yellow, 27vw 30vh yellow, 39vw 1vh yellow, 54vw 44vh yellow, 80vw 84vh yellow, 5vw 70vh yellow, 21vw 29vh yellow, 98vw 94vh yellow, 25vw 89vh yellow, 60vw 93vh yellow, 88vw 78vh yellow, 17vw 21vh yellow, 58vw 38vh yellow, 90vw 37vh yellow, 28vw 18vh yellow, 6vw 73vh yellow, 75vw 27vh yellow, 96vw 67vh yellow, 44vw 23vh yellow, 25vw 51vh yellow, 75vw 99vh yellow, 15vw 54vh yellow, 50vw 60vh yellow, 69vw 65vh yellow, 97vw 29vh yellow, 56vw 24vh yellow, 6vw 48vh yellow, 13vw 50vh yellow, 16vw 56vh yellow, 32vw 65vh yellow, 42vw 78vh yellow, 63vw 98vh yellow, 20vw 2vh yellow, 88vw 12vh yellow, 2vw 56vh yellow, 31vw 10vh yellow, 92vw 10vh yellow, 11vw 40vh yellow, 3vw 80vh yellow, 53vw 6vh yellow, 23vw 41vh yellow, 40vw 36vh yellow, 34vw 90vh yellow, 99vw 54vh yellow, 22vw 21vh yellow, 88vw 61vh yellow, 19vw 77vh yellow, 3vw 90vh yellow, 82vw 53vh yellow, 79vw 19vh yellow, 24vw 77vh yellow, 18vw 94vh yellow, 37vw 47vh yellow, 17vw 29vh yellow, 9vw 31vh yellow, 74vw 36vh yellow, 58vw 26vh yellow, 4vw 27vh yellow, 15vw 23vh yellow, 64vw 71vh yellow, 95vw 79vh yellow, 99vw 69vh yellow, 4vw 59vh yellow, 85vw 30vh yellow, 99vw 35vh yellow, 25vw 70vh yellow, 78vw 16vh yellow, 5vw 46vh yellow, 15vw 82vh yellow, 17vw 20vh yellow, 26vw 77vh yellow, 13vw 54vh yellow, 27vw 30vh yellow, 31vw 93vh yellow, 82vw 36vh yellow, 49vw 61vh yellow, 2vw 45vh yellow, 75vw 42vh yellow, 3vw 94vh yellow, 5vw 78vh yellow, 64vw 68vh yellow, 46vw 55vh yellow, 45vw 76vh yellow, 15vw 23vh yellow, 79vw 53vh yellow, 34vw 88vh yellow, 87vw 16vh yellow, 20vw 47vh yellow, 14vw 3vh yellow, 40vw 43vh yellow, 28vw 96vh yellow, 77vw 17vh yellow, 46vw 71vh yellow, 68vw 68vh yellow, 1vw 72vh yellow, 12vw 2vh yellow, 36vw 16vh yellow, 56vw 15vh yellow, 60vw 74vh yellow, 57vw 95vh yellow, 90vw 69vh yellow, 65vw 95vh yellow, 63vw 1vh yellow, 84vw 67vh yellow, 43vw 18vh yellow, 94vw 41vh yellow, 6vw 73vh yellow, 88vw 79vh yellow, 9vw 80vh yellow, 52vw 29vh yellow, 87vw 21vh yellow, 52vw 81vh yellow, 97vw 80vh yellow, 75vw 58vh yellow, 59vw 18vh yellow, 60vw 65vh yellow, 30vw 73vh yellow, 95vw 7vh yellow, 35vw 83vh yellow, 53vw 96vh yellow, 9vw 75vh yellow;
+  animation: moveUp 10s infinite linear;
+}
+.layer1::after {
+  width: inherit;
+  height: inherit;
+  content: "";
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  box-shadow: inherit;
+}
+
+.layer2 {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 23vw 9vh  #fff, 91vw 74vh #fff, 61vw 74vh #fff, 4vw 40vh #fff, 28vw 67vh #fff, 72vw 95vh #fff, 34vw 59vh #fff, 4vw 94vh #fff, 86vw 26vh #fff, 42vw 37vh #fff, 87vw 72vh #fff, 30vw 11vh #fff, 5vw 43vh #fff, 35vw 86vh #fff, 19vw 99vh #fff, 72vw 34vh #fff, 52vw 42vh #fff, 82vw 89vh #fff, 17vw 51vh #fff, 94vw 24vh #fff, 3vw 13vh #fff, 20vw 38vh #fff, 21vw 4vh #fff, 52vw 70vh #fff, 82vw 24vh #fff, 34vw 41vh #fff, 16vw 75vh #fff, 59vw 64vh #fff, 75vw 97vh #fff, 89vw 43vh #fff, 41vw 78vh #fff, 70vw 93vh #fff, 30vw 37vh #fff, 8vw 57vh #fff, 40vw 6vh #fff, 93vw 18vh #fff, 79vw 64vh #fff, 67vw 6vh #fff, 9vw 89vh #fff, 46vw 56vh #fff, 8vw 23vh #fff, 3vw 75vh #fff, 22vw 83vh #fff, 69vw 85vh #fff, 83vw 37vh #fff, 88vw 44vh #fff, 81vw 96vh #fff, 14vw 85vh #fff, 39vw 96vh #fff, 73vw 87vh #fff, 34vw 12vh #fff, 71vw 57vh #fff, 28vw 1vh #fff, 10vw 71vh #fff, 46vw 38vh #fff, 78vw 26vh #fff, 18vw 82vh #fff, 35vw 13vh #fff, 62vw 63vh #fff, 10vw 34vh #fff, 1vw 28vh #fff, 22vw 78vh #fff, 2vw 1vh #fff, 95vw 64vh #fff, 59vw 46vh #fff, 25vw 73vh #fff, 75vw 19vh #fff, 29vw 83vh #fff, 3vw 55vh #fff, 43vw 19vh #fff, 68vw 27vh #fff, 98vw 88vh #fff, 13vw 57vh #fff, 50vw 70vh #fff, 79vw 12vh #fff, 100vw 81vh #fff, 93vw 54vh #fff, 17vw 75vh #fff, 57vw 55vh #fff, 30vw 30vh #fff, 22vw 16vh #fff, 27vw 88vh #fff, 67vw 76vh #fff, 10vw 58vh #fff, 88vw 43vh #fff, 25vw 65vh #fff, 40vw 6vh #fff, 16vw 24vh #fff, 86vw 92vh #fff, 78vw 19vh #fff, 56vw 80vh #fff, 78vw 85vh #fff, 21vw 39vh #fff, 96vw 25vh #fff, 19vw 45vh #fff, 56vw 19vh #fff, 49vw 8vh #fff, 73vw 9vh #fff, 30vw 61vh #fff, 94vw 8vh #fff, 2vw 36vh #fff, 30vw 62vh #fff, 93vw 46vh #fff, 73vw 26vh #fff, 23vw 76vh #fff, 49vw 43vh #fff, 76vw 32vh #fff, 56vw 34vh #fff, 74vw 77vh #fff, 20vw 82vh #fff, 76vw 81vh #fff, 7vw 43vh #fff, 15vw 52vh #fff, 25vw 64vh #fff, 17vw 10vh #fff, 99vw 32vh #fff, 76vw 3vh #fff, 42vw 67vh #fff, 84vw 60vh #fff, 92vw 20vh #fff, 2vw 63vh #fff, 57vw 35vh #fff, 45vw 41vh #fff, 63vw 35vh #fff, 25vw 50vh #fff, 9vw 74vh #fff, 18vw 100vh #fff, 7vw 92vh #fff, 64vw 91vh #fff, 31vw 79vh #fff, 41vw 47vh #fff, 36vw 64vh #fff, 16vw 78vh #fff, 38vw 12vh #fff, 16vw 30vh #fff, 72vw 73vh #fff, 60vw 75vh #fff, 62vw 45vh #fff, 1vw 51vh #fff, 43vw 1vh #fff, 85vw 7vh #fff, 93vw 45vh #fff, 44vw 99vh #fff, 10vw 74vh #fff, 67vw 7vh #fff, 74vw 8vh #fff, 50vw 17vh #fff, 85vw 91vh #fff, 69vw 34vh #fff, 55vw 62vh #fff, 63vw 65vh #fff, 32vw 42vh #fff, 77vw 49vh #fff, 39vw 97vh #fff, 30vw 76vh #fff, 59vw 14vh #fff, 30vw 76vh #fff, 25vw 20vh #fff, 81vw 30vh #fff, 94vw 13vh #fff, 21vw 25vh #fff, 21vw 1vh #fff, 17vw 66vh #fff, 36vw 91vh #fff, 82vw 89vh #fff, 73vw 76vh #fff, 97vw 65vh #fff, 31vw 89vh #fff, 39vw 11vh #fff, 89vw 60vh #fff, 51vw 34vh #fff, 70vw 63vh #fff, 69vw 80vh #fff, 9vw 8vh #fff, 2vw 92vh #fff, 28vw 14vh #fff, 14vw 15vh #fff, 3vw 73vh #fff, 71vw 82vh #fff, 77vw 82vh #fff, 82vw 54vh #fff, 57vw 90vh #fff, 77vw 57vh #fff, 90vw 16vh #fff, 7vw 62vh #fff, 40vw 92vh #fff, 89vw 71vh #fff, 82vw 39vh #fff, 93vw 50vh #fff, 15vw 61vh #fff, 37vw 37vh #fff, 72vw 18vh #fff, 79vw 19vh #fff, 51vw 53vh #fff, 99vw 61vh #fff, 29vw 14vh #fff, 8vw 22vh #fff, 31vw 53vh #fff, 70vw 60vh #fff, 75vw 77vh #fff, 9vw 76vh #fff, 73vw 11vh #fff, 53vw 75vh #fff, 99vw 76vh #fff, 27vw 84vh #fff, 38vw 99vh #fff, 97vw 87vh #fff, 92vw 77vh #fff, 67vw 30vh #fff, 90vw 18vh #fff, 82vw 4vh #fff, 59vw 11vh #fff, 98vw 7vh #fff, 58vw 80vh #fff, 62vw 98vh #fff, 4vw 88vh #fff, 15vw 33vh #fff, 73vw 16vh #fff, 77vw 87vh #fff, 49vw 41vh #fff, 35vw 63vh #fff, 79vw 9vh #fff, 43vw 22vh #fff, 5vw 48vh #fff, 58vw 49vh #fff, 69vw 90vh #fff, 56vw 60vh #fff, 84vw 27vh #fff, 74vw 3vh #fff, 97vw 55vh #fff, 80vw 55vh #fff, 15vw 7vh #fff, 5vw 86vh #fff, 5vw 52vh #fff, 71vw 62vh #fff, 50vw 87vh #fff, 7vw 75vh #fff, 13vw 67vh #fff, 88vw 83vh #fff, 98vw 29vh #fff, 98vw 56vh #fff, 43vw 82vh #fff, 86vw 48vh #fff, 67vw 61vh #fff, 20vw 20vh #fff, 32vw 69vh #fff, 39vw 80vh #fff, 91vw 93vh #fff, 75vw 91vh #fff, 35vw 94vh #fff, 60vw 98vh #fff, 24vw 44vh #fff, 19vw 46vh #fff, 73vw 100vh #fff, 24vw 20vh #fff, 35vw 67vh #fff, 81vw 20vh #fff, 77vw 42vh #fff, 52vw 28vh #fff, 24vw 61vh #fff, 99vw 1vh #fff, 30vw 67vh #fff, 60vw 35vh #fff, 94vw 98vh #fff, 86vw 41vh #fff, 29vw 2vh #fff, 64vw 77vh #fff, 50vw 91vh #fff, 51vw 1vh #fff, 10vw 8vh #fff, 57vw 62vh #fff, 86vw 86vh #fff, 26vw 72vh #fff, 95vw 11vh #fff, 77vw 33vh #fff, 10vw 73vh #fff, 17vw 14vh #fff, 81vw 13vh #fff, 48vw 64vh #fff, 27vw 76vh #fff, 53vw 34vh #fff, 40vw 22vh #fff, 39vw 8vh #fff, 43vw 38vh #fff, 37vw 65vh #fff, 72vw 54vh #fff, 95vw 32vh #fff, 11vw 73vh #fff, 92vw 78vh #fff, 6vw 76vh #fff, 45vw 17vh #fff, 28vw 53vh #fff, 87vw 74vh #fff, 62vw 9vh #fff, 28vw 35vh #fff, 34vw 42vh #fff, 10vw 97vh #fff, 58vw 79vh #fff, 17vw 53vh #fff, 99vw 32vh #fff;
+  animation: moveUp 7s infinite linear;
+  z-index: 2;
+}
+.layer2::after {
+  width: inherit;
+  height: inherit;
+  content: "";
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  box-shadow: inherit;
+}
+
+.layer3 {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 6px;
+  height: 6px;
+  background: red;
+  border-radius: 50%;
+  box-shadow: 100vw 37vh  red, 97vw 2vh red, 53vw 77vh red, 33vw 12vh red, 58vw 6vh red, 25vw 14vh red, 61vw 88vh red, 21vw 41vh red, 74vw 10vh red, 61vw 31vh red, 42vw 62vh red, 87vw 10vh red, 67vw 8vh red, 23vw 20vh red, 30vw 21vh red, 12vw 77vh red, 5vw 84vh red, 28vw 33vh red, 62vw 6vh red, 34vw 62vh red, 46vw 57vh red, 88vw 24vh red, 12vw 23vh red, 69vw 59vh red, 33vw 4vh red, 99vw 54vh red, 57vw 29vh red, 31vw 70vh red, 38vw 70vh red, 54vw 46vh red, 88vw 47vh red, 75vw 75vh red, 62vw 32vh red, 82vw 26vh red, 78vw 43vh red, 35vw 46vh red, 46vw 50vh red, 32vw 26vh red, 66vw 94vh red, 18vw 8vh red, 65vw 51vh red, 21vw 28vh red, 46vw 82vh red, 34vw 77vh red, 49vw 35vh red, 91vw 34vh red, 78vw 20vh red, 71vw 11vh red, 29vw 5vh red, 33vw 71vh red, 41vw 85vh red, 27vw 6vh red, 99vw 28vh red, 17vw 15vh red, 94vw 15vh red, 12vw 4vh red, 98vw 1vh red, 67vw 90vh red, 54vw 66vh red, 10vw 9vh red, 82vw 87vh red, 5vw 65vh red, 67vw 13vh red, 50vw 59vh red, 36vw 58vh red, 8vw 53vh red, 5vw 62vh red, 13vw 28vh red, 74vw 64vh red, 74vw 98vh red, 89vw 26vh red, 85vw 84vh red, 90vw 59vh red, 32vw 22vh red, 4vw 76vh red, 99vw 81vh red, 48vw 92vh red, 79vw 13vh red, 70vw 57vh red, 63vw 58vh red, 46vw 73vh red, 42vw 20vh red, 72vw 59vh red, 76vw 36vh red, 10vw 35vh red, 31vw 11vh red, 44vw 7vh red, 83vw 22vh red, 82vw 34vh red, 74vw 51vh red, 47vw 37vh red, 31vw 46vh red, 16vw 16vh red, 13vw 29vh red, 77vw 41vh red, 25vw 58vh red, 83vw 24vh red, 26vw 7vh red, 13vw 30vh red, 10vw 22vh red, 93vw 95vh red, 78vw 9vh red, 60vw 32vh red, 88vw 14vh red, 53vw 46vh red, 77vw 70vh red, 3vw 82vh red, 17vw 10vh red, 45vw 28vh red, 63vw 47vh red, 32vw 36vh red, 16vw 34vh red, 59vw 90vh red, 43vw 46vh red, 48vw 32vh red, 43vw 24vh red, 42vw 51vh red, 40vw 18vh red, 42vw 6vh red, 42vw 56vh red, 17vw 38vh red, 27vw 75vh red, 3vw 1vh red, 96vw 27vh red, 92vw 2vh red, 97vw 96vh red, 26vw 53vh red, 12vw 93vh red, 64vw 44vh red, 67vw 93vh red, 44vw 44vh red, 14vw 56vh red, 17vw 46vh red, 2vw 95vh red, 22vw 31vh red, 11vw 9vh red, 31vw 29vh red, 25vw 98vh red, 81vw 38vh red, 91vw 37vh red, 7vw 74vh red, 22vw 63vh red, 78vw 48vh red, 48vw 15vh red, 73vw 26vh red, 36vw 89vh red, 26vw 80vh red, 86vw 3vh red, 13vw 81vh red, 35vw 10vh red, 57vw 84vh red, 73vw 21vh red, 25vw 40vh red, 94vw 84vh red, 72vw 75vh red, 55vw 99vh red, 16vw 98vh red, 49vw 55vh red, 57vw 80vh red, 99vw 74vh red, 40vw 44vh red, 15vw 34vh red, 32vw 69vh red, 53vw 94vh red, 97vw 38vh red, 24vw 43vh red, 29vw 65vh red, 33vw 51vh red, 36vw 55vh red, 97vw 49vh red, 39vw 47vh red, 54vw 53vh red, 75vw 24vh red, 32vw 23vh red, 73vw 66vh red, 95vw 30vh red, 91vw 4vh red, 74vw 22vh red, 32vw 81vh red, 61vw 92vh red, 26vw 5vh red, 90vw 66vh red, 23vw 86vh red, 46vw 2vh red, 44vw 32vh red, 92vw 56vh red, 8vw 90vh red, 54vw 40vh red, 90vw 86vh red, 8vw 3vh red, 3vw 78vh red, 9vw 37vh red, 78vw 46vh red, 52vw 74vh red, 26vw 50vh red, 82vw 15vh red, 42vw 4vh red, 83vw 68vh red, 71vw 29vh red, 86vw 76vh red, 20vw 52vh red, 96vw 99vh red, 99vw 66vh red, 55vw 49vh red, 4vw 24vh red, 77vw 60vh red, 22vw 49vh red, 80vw 59vh red, 85vw 24vh red, 100vw 74vh red, 91vw 50vh red, 21vw 71vh red, 77vw 79vh red, 31vw 56vh red, 59vw 81vh red, 53vw 63vh red, 44vw 49vh red, 2vw 2vh red, 55vw 2vh red, 22vw 8vh red, 64vw 5vh red, 53vw 36vh red, 62vw 31vh red, 31vw 14vh red, 50vw 10vh red, 81vw 50vh red, 79vw 27vh red, 80vw 92vh red, 1vw 45vh red, 66vw 39vh red, 40vw 82vh red, 39vw 10vh red, 51vw 30vh red, 87vw 93vh red, 96vw 16vh red, 53vw 32vh red, 44vw 50vh red, 19vw 20vh red, 4vw 78vh red, 10vw 54vh red, 10vw 47vh red, 67vw 29vh red, 45vw 53vh red, 60vw 20vh red, 44vw 68vh red, 32vw 57vh red, 29vw 15vh red, 36vw 17vh red, 29vw 46vh red, 89vw 51vh red, 74vw 66vh red, 26vw 32vh red, 94vw 70vh red, 11vw 48vh red, 17vw 94vh red, 44vw 24vh red, 55vw 1vh red, 63vw 3vh red, 93vw 89vh red, 12vw 3vh red, 41vw 44vh red, 58vw 63vh red, 16vw 91vh red, 19vw 13vh red, 98vw 22vh red, 58vw 76vh red, 98vw 18vh red, 10vw 31vh red, 33vw 10vh red, 45vw 50vh red, 67vw 49vh red, 11vw 100vh red, 65vw 25vh red, 19vw 76vh red, 53vw 97vh red, 11vw 45vh red, 97vw 43vh red, 12vw 11vh red, 88vw 44vh red, 38vw 72vh red, 64vw 30vh red, 52vw 3vh red, 65vw 9vh red, 79vw 37vh red, 89vw 74vh red, 50vw 95vh red, 80vw 87vh red, 2vw 1vh red, 88vw 39vh red, 84vw 84vh red, 75vw 78vh red, 55vw 88vh red, 91vw 49vh red, 21vw 76vh red, 52vw 13vh red, 16vw 66vh red, 17vw 9vh red, 2vw 18vh red, 60vw 87vh red, 74vw 30vh red;
+  animation: moveUp 5s infinite linear;
+  z-index: 3;
+}
+.layer3::after {
+  width: inherit;
+  height: inherit;
+  content: "";
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  box-shadow: inherit;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes moveUp {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, -100vh);
+  }
+}

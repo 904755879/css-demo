@@ -1,0 +1,97 @@
+<!--
+ * @Author: ‘zhuxiaoxin’ xin.zhu@backgardon.com
+ * @Date: 2024-03-28 15:49:23
+ * @LastEditors: ‘zhuxiaoxin’ xin.zhu@backgardon.com
+ * @LastEditTime: 2024-03-28 16:34:37
+ * @FilePath: \project-pftd:\study\IntersetionObserve.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,shrink-to-fit=no,user-scalable=no" name="viewport" viewport="cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+  <meta name="apple-mobile-web-app-title" content="">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <style>
+  #root{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    overflow: auto;
+  }
+  h1{
+    transition: all .3s;
+  }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+  </div>
+
+  <script>
+    let list = document.querySelectorAll('h1')
+    let root = document.querySelector('#root')
+    let observe = new IntersectionObserver((entries) => {
+      console.log(entries)
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          console.log('重叠了')
+          entry.target.style.backgroundColor = 'red'
+          // observe.unobserve(entry.target)
+        }else{
+          console.log('未重叠')
+          entry.target.style.backgroundColor = '#fff'
+        }
+      })
+    },{
+      root:root, //父级元素，默认null，视口
+      rootMargin:'-90px 0px -90px 0px', // 父级交集运算边距
+      threshold:1 //重叠率
+    })
+
+    list.forEach(el =>{
+      observe.observe(el)
+    })
+  </script>
+</body>
+</html>

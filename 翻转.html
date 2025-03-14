@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card {
+      position: relative;
+      width: 200px;
+      height: 300px;
+      perspective: 1000px;
+      /* 创建一个3D空间 */
+    }
+
+    .card-front,
+    .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      backface-visibility: hidden;
+      /* 当元素旋转至背面时，背面不可见 */
+      transition: transform 0.6s ease-in-out;
+      /* 平滑过渡效果 */
+    }
+
+    .card-front {
+      background-color: #f1f1f1;
+      z-index: 2;
+      /* 初始时，正面在顶部 */
+      transform: rotateY(0deg);
+    }
+
+    .card-back {
+      background-color: #ddd;
+      transform: rotateY(180deg);
+      /* 背面初始时翻转180度 */
+    }
+
+    /* 当卡片被点击或触发某个事件时，添加这个类来翻转卡片 */
+    .card.flipped .card-front {
+      transform: rotateY(180deg);
+    }
+
+    .card.flipped .card-back {
+      transform: rotateY(360deg);
+      /* 或者简单地使用 rotateY(0deg)，因为背面已经翻转了180度 */
+      z-index: 4;
+      /* 翻转后，背面在顶部 */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="card-front">
+      <p>正面内容</p>
+    </div>
+    <div class="card-back">
+      <p>背面内容</p>
+    </div>
+  </div>
+  <script>
+    document.querySelector('.card').addEventListener('click', function() {  
+  this.classList.toggle('flipped');  
+});
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!--
+ * @Author: pft tao.pan@backgardon.com
+ * @Date: 2024-05-31 17:40:25
+ * @LastEditors: pft tao.pan@backgardon.com
+ * @LastEditTime: 2024-07-05 17:44:00
+ * @FilePath: \okspin-templatec:\Users\ASUS\Desktop\连续滚动.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>连续滚动</title>
+  <style>
+    .warp{
+      width: 200px;
+      height: 200px;
+      border: 1px solid #000000;
+      /* overflow: hidden; */
+    }
+    #a, #b{
+      width: 200px;
+      height: 200px;
+      font-size: 20px;
+      text-align: center;
+    }
+    #a{
+      background: pink;
+      animation: scroll 10s -10s linear  infinite;
+    }
+    #b{
+      background: yellowgreen;
+      animation: scroll2 10s -5s   linear  infinite;
+    }
+    @keyframes scroll {
+      from{transform: translateY(-100%);}
+      to{transform: translateY(100%);}
+    }
+    @keyframes scroll2 {
+      from{transform: translateY(-200%);}
+      to{transform: translateY(0%);}
+    }
+  </style>
+</head>
+<body>
+  <div class="warp">
+    <div id="a">1</div>
+    <div id="b">2</div>
+  </div>
+</body>
+</html>
